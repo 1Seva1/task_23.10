@@ -20,8 +20,7 @@ class specEquip extends technique {
     }
 }
 $car = new Car();
-$car->Run();
-$tank = new Tanks();
-$tank->Run();
-$bulldozer = new specEquip();
-$bulldozer->Run();
+function enginery(technique $car) {
+    $car->Run();
+  }
+enginery($car);
